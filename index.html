@@ -184,8 +184,28 @@
     </div>
   </footer>
 </div>
-  <script id='v-chat-widget' src='https://chat-widget.vonage.com/index.js?widget_id=bc338966-2ba6-40c3-b938-505734f232fe&chat_title=Special+Freight+Co.&chat_subtitle=Customer+Care&company_name=Ella+Hall&initial_message=Thank+you+for+reaching+out.+How+can+we+help+you+today?&primary_color=#D2D2D2'></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- ServiceNow Chat Widget Container -->
+<script 
+  src="https://dev420275.service-now.com/scripts/sn_va_web_client_app.js">
+</script>
+
+<script>
+  window.addEventListener('load', function() {
+    const chat = new ServiceNowChat({
+      instance: 'https://dev420275.service-now.com',
+      branding: {
+        bgColor: '#0052cc',
+        primaryColor: '#0052cc',
+        hoverColor: '#0747a6',
+        activeColor: '#003d99',
+        sizeMultiplier: 1.0
+      },
+      offsetX: 20,
+      offsetY: 20,
+      position: 'right'
+    });
+  });
+</script>
 </body>
 
 </html>
