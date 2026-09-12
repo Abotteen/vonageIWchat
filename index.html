@@ -185,26 +185,12 @@
   </footer>
 </div>
   <!-- ServiceNow Chat Widget Container -->
-<script 
-  src="https://dev420275.service-now.com/scripts/sn_va_web_client_app.js">
-</script>
-
+<script src="https://dev420275.service-now.com/scripts/sn_csm_ec.js?v=5.6"></script>
 <script>
-  window.addEventListener('load', function() {
-    const chat = new ServiceNowChat({
-      instance: 'https://dev420275.service-now.com',
-      branding: {
-        bgColor: '#0052cc',
-        primaryColor: '#0052cc',
-        hoverColor: '#0747a6',
-        activeColor: '#003d99',
-        sizeMultiplier: 1.0
-      },
-      offsetX: 20,
-      offsetY: 20,
-      position: 'right'
-    });
-  });
+SN_CSM_EC.init({
+	moduleID: "https://dev420275.service-now.com/#cb1f28ed2f934b50cd834b707fa4e384",
+	loadFeature: SN_CSM_EC.loadEMFeature()
+});
 </script>
 </body>
 
